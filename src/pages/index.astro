@@ -1,81 +1,152 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
-	</main>
+<Layout title="McAlign">
+  <main class="pl-[10%]">
+    <div class="flex flex-col md:flex-row-reverse overflow-y-clip">
+      <div>
+        <img src="/hero.svg" alt="" class="object-contain scale-125 -mb-[20%] mt-[5%]"  />
+      </div>
+      <div class="w-full lg:w-4/5 flex flex-col justify-center">
+        <div
+          class="text-darkblue text-[3vw] font-black font-gt-america tracking-[5px] leading-tight"
+        >
+          <h2>UNIFIED</h2>
+          <h2>SALES PERFORMANCE</h2>
+          <h2>MANAGEMENT (Unified SPM)</h2>
+        </div>
+        <h3 class="text-pink font-bold font-aeonik text-[1.5vw]">
+          BETTER DECISION MAKING FOR BETTER SALES PERFORMANCE
+        </h3>
+        <div class="w-[90%]">
+          <p class="font-aeonik text-[1.2vw] leading-[1.8]">
+            Unified Sales Performance Management (Unified SPM) intelligent
+            process framework which align the people, processes and technology
+            to ensure that every salespeople have an opportunity to win. Sales
+            leaders can leverage USPM frame work to influence behavior and drive
+            sales results throughout the organization.
+          </p>
+        </div>
+        <div class="inline-block pt-10">
+          <button
+            class="py-2 px-8 bg-gradient-to-r font-bold font-aeonik from-purple to-cyan text-white text-lg"
+            >Get Started &nbsp; &nbsp; →</button
+          >
+          <button
+            class="ml-5 py-2 px-8 bg-white text-purple border-purple border text-lg"
+            >Contact Us</button
+          >
+        </div>
+      </div>
+    </div>
+  </main>
+  <section class="bg-black/5 w-full py-[5%] px-[15%]">
+    <h2 class="text-center font-gt-america text-darkblue text-[2vw]">
+      Partnering with the World's Leading SPM Platforms
+    </h2>
+    <div
+      class="flex pt-10 flex-row flex-wrap md:flex-nowrap items-center gap-16 justify-evenly"
+    >
+      <div><img src="/partners/xactly.svg" class="object-contain" /></div>
+      <div><img src="/partners/varicent.svg" /></div>
+      <div><img src="/partners/captivateiq.svg" /></div>
+      <div><img src="/partners/aurochs.svg" /></div>
+      <div><img src="/partners/everstage.svg" /></div>
+    </div>
+  </section>
+  <section class="py-[5%] px-[12%]">
+    <h2 class="text-center font-gt-america text-darkblue text-[2vw] uppercase">
+      Our Services
+    </h2>
+    <p class="pt-5 text-center text-[1.4vw] px-[5%] tracking-wider">
+      We have gone above and beyond to show our clients that we are not just
+      another consulting firm. We are an extension of their business and
+      together we will build a better future.
+    </p>
+    <div class="pt-10 gap-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div class="flex flex-col justify-between h-full">
+        <div>
+          <div class="flex flex-row justify-center">
+            <img src="/services/advisory.svg" />
+          </div>
+          <h3
+            class="py-6 font-gt-america text-darkblue text-[1.5vw] tracking-wider"
+          >
+            Advisory Services
+          </h3>
+          <p class="leading-loose tracking-widest text-left">
+            We offer advisory services to help our clients achieve their goals
+            and objectives. With our expertise and experience, we can help you
+            find the best solution for your business.<br /><br /> We have access
+            to a wide range of services that will ensure that you are able to meet
+            your business goals.
+          </p>
+        </div>
+        <button
+          class="py-2 px-8 bg-gradient-to-r font-bold font-aeonik from-purple to-cyan text-white text-lg w-fit"
+          >Get Started &nbsp; &nbsp; →</button
+        >
+      </div>
+      <div class="flex flex-col justify-between h-full">
+        <div>
+          <div class="flex flex-row justify-center">
+            <img src="/services/implementation.svg" />
+          </div>
+          <h3
+            class="py-6 font-gt-america text-darkblue text-[1.5vw] tracking-wider"
+          >
+            Implementation Services
+          </h3>
+          <p class="leading-loose tracking-widest text-left">
+            Our implementation services set our clients' products and services
+            apart from the competition. Our implementation services will help
+            you to make your product or service more successful by helping you
+            determine how best to implement it.
+            <br />
+            <br />
+            Our implementation experts will work with you every step of the way to
+            ensure that your project is delivered in a timely and cost-effective
+            manner.
+          </p>
+        </div>
+        <button
+          class="py-2 px-8 bg-gradient-to-r font-bold font-aeonik from-purple to-cyan text-white text-lg w-fit"
+          >Get Started &nbsp; &nbsp; →</button
+        >
+      </div>
+      <div class="flex flex-col justify-between h-full gap-8">
+        <div>
+          <div class="flex flex-row justify-center">
+            <img src="/services/managed.svg" />
+          </div>
+          <h3
+            class="py-6 font-gt-america text-darkblue text-[1.5vw] tracking-wider"
+          >
+            Managed Services
+          </h3>
+          <p class="leading-loose tracking-widest text-left">
+            We provider that of fers top-tier customer service and technical
+            skills, so you can focus on what matters most: running your
+            business. We handle all aspects of your IT, so you're free to do
+            what you do best: grow!<br /><br /> Our pricing model is competitive,
+            and we offer 24x7x365 help desk suppor t. Our team of exper ts will work
+            with yours to make sure all your technology needs are met at a rate that
+            won't break the bank.
+          </p>
+        </div>
+        <button
+          class="py-2 px-8 bg-gradient-to-r font-bold font-aeonik from-purple to-cyan text-white text-lg w-fit"
+          >Get Started &nbsp; &nbsp; →</button
+        >
+      </div>
+    </div>
+  </section>
+  <section class="bg-black/5 w-full py-[5%] px-[15%]">
+    <h2
+      class="text-darkblue text-[2vw] font-gt-america font-black uppercase text-center"
+    >
+      Our Solutions Framework
+    </h2>
+  </section>
 </Layout>
-
-<style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
-</style>
