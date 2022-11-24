@@ -13,7 +13,7 @@ import Layout from "../layouts/Layout.astro";
         />
       </div>
       <div
-        class="w-full lg:w-4/5 flex flex-col justify-center pr-[10%] md:pr-0"
+        class="w-full md:w-4/5 flex flex-col justify-center pr-[10%] md:pr-0"
       >
         <div
           class="text-darkblue text-[3.5vw] md:text-[3vw] font-black font-gt-america tracking-[5px] leading-tight"
@@ -36,16 +36,16 @@ import Layout from "../layouts/Layout.astro";
             sales results throughout the organization.
           </p>
         </div>
-        <div class="flex flex-col sm:flex-row gap-5 pt-10">
+        <div class="flex flex-col w-fit md:flex-row gap-5 pt-10">
           <button
-            class="py-2 px-8 bg-gradient-to-r font-bold font-aeonik from-purple to-cyan text-white text-lg flex flex-row items-center w-fit"
+            class="py-2 px-8 bg-gradient-to-r font-bold font-aeonik from-purple to-cyan text-white md:text-xs flex flex-row items-center w-fit"
             >Get Started &nbsp; &nbsp; <img
               src="/rightarrow.svg"
               class="h-[1em]"
             />
           </button>
           <button
-            class="py-2 px-8 bg-white text-purple border-purple border text-lg w-fit"
+            class="py-2 px-8 bg-white text-purple border-purple border text-xs w-full md:w-fit"
             >Contact Us</button
           >
         </div>
@@ -92,7 +92,9 @@ import Layout from "../layouts/Layout.astro";
           >
             Advisory Services
           </h3>
-          <p class="leading-loose tracking-widest text-left text-[3vw] md:text-base">
+          <p
+            class="leading-loose tracking-widest text-left text-[3vw] md:text-base"
+          >
             We offer advisory services to help our clients achieve their goals
             and objectives. With our expertise and experience, we can help you
             find the best solution for your business.<br /><br /> We have access
@@ -118,7 +120,9 @@ import Layout from "../layouts/Layout.astro";
           >
             Implementation Services
           </h3>
-          <p class="leading-loose tracking-widest text-left text-[3vw] md:text-base">
+          <p
+            class="leading-loose tracking-widest text-left text-[3vw] md:text-base"
+          >
             Our implementation services set our clients' products and services
             apart from the competition. Our implementation services will help
             you to make your product or service more successful by helping you
@@ -148,7 +152,9 @@ import Layout from "../layouts/Layout.astro";
           >
             Managed Services
           </h3>
-          <p class="leading-loose tracking-widest text-left text-[3vw] md:text-base">
+          <p
+            class="leading-loose tracking-widest text-left text-[3vw] md:text-base"
+          >
             We provider that of fers top-tier customer service and technical
             skills, so you can focus on what matters most: running your
             business. We handle all aspects of your IT, so you're free to do
@@ -168,19 +174,21 @@ import Layout from "../layouts/Layout.astro";
       </div>
     </div>
   </section>
-  <section class="bg-black/5 w-full py-[5%] px-[15%]">
+  <section class="bg-black/5 w-full py-[5%]">
     <h2
-      class="text-darkblue text-[4vw] md:text-[2vw] font-gt-america font-black uppercase text-center"
+      class="text-darkblue text-[4vw] md:text-[2vw] font-gt-america font-black uppercase text-center px-[15%]"
     >
       Our Solutions Framework
     </h2>
     <p
-      class="text-center text-[3vw] md:text-[1.5vw] text-darkblue font-medium pt-5 pb-20"
+      class="text-center text-[3vw] md:text-[1.5vw] text-darkblue font-medium pt-5 pb-20 px-[15%]"
     >
       Orchestrating Unified Sales Performance Management via modern, digital and
       connected process leveraging our 4I framework.
     </p>
-    <img src="/infographic.svg" />
+    <div class="md:px-[15%]">
+      <img src="/infographic.svg" class="object-cover" />
+    </div>
   </section>
   <section class="px-[15%] py-[10%] w-full">
     <h2
@@ -197,7 +205,7 @@ import Layout from "../layouts/Layout.astro";
       make better decisions. Below are the impacts we have generated
     </p>
     <div
-      class="pt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-content-evenly place-items-center md:gap-y-20"
+      class="pt-10 grid grid-cols-2 lg:grid-cols-3 place-content-evenly place-items-center gap-y-10 lg:gap-y-20 text-center lg:text-start"
     >
       <div>
         <h2 class="text-center font-bold text-[5vw] md:text-[2.5vw]">100%</h2>
@@ -238,7 +246,9 @@ import Layout from "../layouts/Layout.astro";
     </div>
   </section>
   <section class="px-[15%] py-[5%] w-full bg-black text-white">
-    <h2 class="font-gt-america text-center text-[4vw] lg:text-[2vw]">OUR VALUED CLIENTELE</h2>
+    <h2 class="font-gt-america text-center text-[4vw] lg:text-[2vw]">
+      OUR VALUED CLIENTELE
+    </h2>
     <p class="text-center text-redpink text-[3vw] lg:text-[1.5vw] pt-5">
       Trusted by some of the world&apos;s leading organizations
     </p>
