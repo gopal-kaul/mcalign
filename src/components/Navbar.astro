@@ -1,10 +1,17 @@
 ---
 ---
 
-<nav class="flex flex-row justify-between pl-[10%] pt-[5%] gap-4">
+<nav
+  class="flex flex-row justify-between pl-[10%] pt-[5%] gap-4 items-center md:items-stretch"
+>
   <img src="/logo.svg" alt="Logo" />
-  <div class="w-full flex justify-end border-b-2 border-black/10">
-    <ul class="uppercase gap-12 font-black flex flex-row text-black/40 pr-[10%] tracking-widest"> 
+  <div class="w-full flex justify-end md:border-b-2 md:border-black/10 pr-[10%]">
+    <svg viewBox="0 0 100 80" width="40" height="40" id="hamburger" class="md:hidden">
+      <rect width="100" height="20"></rect>
+      <rect y="30" width="100" height="20"></rect>
+      <rect y="60" width="100" height="20"></rect>
+    </svg>
+    <ul class="uppercase gap-12 font-black hidden md:flex flex-row text-black/40 tracking-widest shrink-0"> 
       <li class="text-green">Home</li>
       <li>Our Thinking</li>
       <li>Services</li>
@@ -13,3 +20,19 @@
     </ul>
   </div>
 </nav>
+<ul
+  id="mobilenav"
+  class="hidden uppercase gap-y-4 font-black flex-col text-black/40 tracking-widest items-end pr-[10%]"
+>
+  <li class="text-green">Home</li>
+  <li>Our Thinking</li>
+  <li>Services</li>
+  <li>Blogs</li>
+  <li>Contact Us</li>
+</ul>
+<script>
+  document.getElementById("hamburger").addEventListener("click", (e) => {
+    document.getElementById("mobilenav").classList.toggle("hidden");
+    document.getElementById("mobilenav").classList.toggle("flex");
+  });
+</script>

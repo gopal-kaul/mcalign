@@ -3,24 +3,32 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="McAlign">
-  <main class="pl-[10%]">
-    <div class="flex flex-col md:flex-row-reverse overflow-y-clip">
+  <main class="pt-20 md:pt-0 pl-[10%]">
+    <div class="flex flex-col-reverse md:flex-row-reverse overflow-y-clip">
       <div>
-        <img src="/hero.svg" alt="" class="object-contain scale-125 -mb-[20%] mt-[5%]"  />
+        <img
+          src="/hero.svg"
+          alt=""
+          class="object-contain md:scale-125 -mb-[30%] md:-mb-[20%] mt-[5%]"
+        />
       </div>
-      <div class="w-full lg:w-4/5 flex flex-col justify-center">
+      <div
+        class="w-full lg:w-4/5 flex flex-col justify-center pr-[10%] md:pr-0"
+      >
         <div
-          class="text-darkblue text-[3vw] font-black font-gt-america tracking-[5px] leading-tight"
+          class="text-darkblue text-[4vw] md:text-[3vw] font-black font-gt-america tracking-[5px] leading-tight"
         >
           <h2>UNIFIED</h2>
           <h2>SALES PERFORMANCE</h2>
           <h2>MANAGEMENT (Unified SPM)</h2>
         </div>
-        <h3 class="text-pink font-bold font-aeonik text-[1.5vw]">
+        <h3
+          class="text-pink font-bold font-aeonik text-[2.5vw] md:text-[1.5vw]"
+        >
           BETTER DECISION MAKING FOR BETTER SALES PERFORMANCE
         </h3>
-        <div class="w-[90%]">
-          <p class="font-aeonik text-[1.2vw] leading-[1.8]">
+        <div class="w-full md:w-[90%]">
+          <p class="font-aeonik text-[2.5vw] md:text-[1.2vw] leading-[1.8]">
             Unified Sales Performance Management (Unified SPM) intelligent
             process framework which align the people, processes and technology
             to ensure that every salespeople have an opportunity to win. Sales
@@ -42,7 +50,7 @@ import Layout from "../layouts/Layout.astro";
     </div>
   </main>
   <section class="bg-black/5 w-full py-[5%] px-[15%]">
-    <h2 class="text-center font-gt-america text-darkblue text-[2vw]">
+    <h2 class="text-center font-gt-america text-darkblue text-[4vw] md:text-[2vw]">
       Partnering with the World's Leading SPM Platforms
     </h2>
     <div
