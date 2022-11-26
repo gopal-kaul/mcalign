@@ -1,4 +1,5 @@
 ---
+const path = new URL(Astro.request.url).pathname;
 ---
 
 <nav
@@ -22,10 +23,13 @@
     <ul
       class="uppercase lg:gap-4 xl:gap-12 font-black hidden lg:flex flex-row text-black/40 tracking-widest shrink-0"
     >
-      <li class="text-green">Home</li>
+      <li><a href="/" class={`${path === "/" && "text-green"}`}>Home</a></li>
       <li>Our Thinking</li>
       <li>Services</li>
-      <li>Blogs</li>
+      <li>
+        <a href="/blogs" class={`${path === "/blogs" && "text-green"}`}>Blogs</a
+        >
+      </li>
       <li>Contact Us</li>
     </ul>
   </div>
@@ -34,10 +38,12 @@
   id="mobilenav"
   class="hidden uppercase gap-y-4 font-black flex-col text-black/40 tracking-widest items-end pr-[10%]"
 >
-  <li class="text-green">Home</li>
+  <li><a href="/" class={`${path === "/" && "text-green"}`}>Home</a></li>
   <li>Our Thinking</li>
   <li>Services</li>
-  <li>Blogs</li>
+  <li>
+    <a href="/blogs" class={`${path === "/blogs" && "text-green"}`}>Blogs</a>
+  </li>
   <li>Contact Us</li>
 </ul>
 <script>
