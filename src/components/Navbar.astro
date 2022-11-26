@@ -23,11 +23,14 @@ const path = new URL(Astro.request.url).pathname;
     <ul
       class="uppercase lg:gap-4 xl:gap-12 font-black hidden lg:flex flex-row text-black/40 tracking-widest shrink-0"
     >
-      <li><a href="/" class={`${path === "/" && "text-green"}`}>Home</a></li>
+      <li>
+        <a href="/" class={`${path === "/" ? "text-green" : ""}`}>Home</a>
+      </li>
       <li>Our Thinking</li>
       <li>Services</li>
       <li>
-        <a href="/blogs" class={`${path === "/blogs" && "text-green"}`}>Blogs</a
+        <a href="/blogs" class={`${path === "/blogs" ? "text-green" : ""}`}
+          >Blogs</a
         >
       </li>
       <li>Contact Us</li>
