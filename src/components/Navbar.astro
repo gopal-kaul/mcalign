@@ -29,7 +29,7 @@ const path = new URL(Astro.request.url).pathname;
       <li>Our Thinking</li>
       <li>Services</li>
       <li>
-        <a href="/blogs" class={`${path === "/blogs" ? "text-green" : ""}`}
+        <a href="blogs" class={`${path === "/blogs/" ? "text-green" : ""}`}
           >Blogs</a
         >
       </li>
@@ -41,11 +41,12 @@ const path = new URL(Astro.request.url).pathname;
   id="mobilenav"
   class="hidden uppercase gap-y-4 font-black flex-col text-black/40 tracking-widest items-end pr-[10%]"
 >
-  <li><a href="/" class={`${path === "/" && "text-green"}`}>Home</a></li>
+  <li><a href="/" class={`${path === "/" ? "text-green" : ""}`}>Home</a></li>
   <li>Our Thinking</li>
   <li>Services</li>
   <li>
-    <a href="/blogs" class={`${path === "/blogs" && "text-green"}`}>Blogs</a>
+    <a href="/blogs" class={`${path === "/blogs/" ? "text-green" : ""}`}>Blogs</a
+    >
   </li>
   <li>Contact Us</li>
 </ul>
