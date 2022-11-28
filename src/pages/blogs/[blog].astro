@@ -1,0 +1,110 @@
+---
+import Layout from "../../layouts/Layout.astro";
+export function getStaticPaths() {
+  return [{ params: { blog: "test" } }];
+}
+const { blog } = Astro.params;
+---
+
+<Layout title={blog}>
+  <main class="px-[10%] pt-[5%]">
+    <h1 class="font-gt-america text-[2.5vw] text-darkblue">
+      Revenue Operations 101: The Definitive Guide to Revenue Operations
+      (RevOps) . How to Grow Your Company&apos;s Revenue with a Strong Revenue
+      Operations Team
+    </h1>
+    <div class="flex flex-row gap-10 pt-10">
+      <button
+        class="px-12 py-0.5 text-white bg-gradient-to-r from-purple to-cyan rounded-lg text-[4vw] md:text-[1.5vw]"
+        >Blog</button
+      >
+      <button
+        class="px-12 py-0.5 text-white bg-gradient-to-r from-purple to-cyan rounded-lg text-[4vw] md:text-[1.5vw]"
+        >Tech</button
+      >
+    </div>
+    <div class="flex flex-row justify-end items-end gap-4">
+      <a href="#"><img src="/socials/facebook.svg" class="h-[35px]" /></a>
+      <a href="#"><img src="/socials/linkedin.svg" class="h-[35px]" /></a>
+      <a href="#"><img src="/socials/twitter.svg" class="h-[35px]" /></a>
+    </div>
+    <p class="text-[1.7vw]">
+      <span class="font-bold font-gt-america text-darkblue">Posted on:</span>
+      Sep 5, 2022
+    </p>
+    <div class="">
+      <img src="/blog/blogimg.png" class="object-contain" />
+    </div>
+    <div class="flex flex-row gap-12">
+      <div>
+        <h2 class="font-gt-america text-darkblue text-[2vw] pb-10">
+          What is Revenue Operations (RevOps)?
+        </h2>
+        <p class="text-[1.5vw] text-black/50">
+          Revenue Operations is a term that describes the full spectrum of
+          activities in a company that drive revenue, from customer acquisition
+          and retention to digital marketing to sales. Rev Ops allows companies
+          to have a single view of overall revenue performance from multiple
+          sources. <br />
+          <br /> The revenue operations team is the engine that drives the revenue
+          engine. The team has a duty to convert prospects into customers, and customers
+          into loyal fans. <span
+            class="underline text-green font-bold decoration-4 decoration-green"
+          >
+            Without a strong revenue operations team, your company will not be
+            able to grow as quickly as it should.
+          </span><br />
+          <br /> RevOps is the management of the revenue cycle to meet agreed-upon
+          targets for service delivery, customer satisfaction, profitability, and
+          cost containment. <br />
+          <br /> Revenue operations is a new team that has been created to manage
+          the day- to-day business operations of a company. Their tasks are to ensure
+          the smooth running of the business and to support its growth. <br />
+          <br />
+          RevOps also include measuring product performance metrics to determine
+          their success. But there are some common ones like <span
+            class="underline text-green font-bold decoration-4 decoration-green"
+          >
+            Net Revenue (or Net Income), Gross Margin (Gross Profit), and Gross
+            Margin Percentage (Gross Margin %).</span
+          >
+        </p>
+        <div class="flex flex-row items-end gap-4 py-10">
+          <a href="#"><img src="/socials/facebook.svg" class="h-[35px]" /></a>
+          <a href="#"><img src="/socials/linkedin.svg" class="h-[35px]" /></a>
+          <a href="#"><img src="/socials/twitter.svg" class="h-[35px]" /></a>
+        </div>
+      </div>
+      <div class="w-full border border-black/20 h-fit rounded-[50px]">
+        <div class="px-[10%] pt-[15%] pb-5">
+          <h2 class="text-darkblue font-bold text-[1.8vw]">Related Articles</h2>
+          <ul class="pt-[3%] flex flex-col gap-4">
+            <li class="flex flex-row items-center gap-4">
+              <img src="/blog/add.svg" /><p class="text-[1.3vw]">
+                Revenue Operations 101
+              </p>
+            </li>
+            <li class="flex flex-row items-center gap-4">
+              <img src="/blog/add.svg" /><p class="text-[1.3vw]">
+                10 rules to increase the Effectiveness...
+              </p>
+            </li>
+            <li class="flex flex-row items-center gap-4">
+              <img src="/blog/add.svg" /><p class="text-[1.3vw]">
+                Tired of managing your sales team?
+              </p>
+            </li>
+            <li class="flex flex-row items-center gap-4">
+              <img src="/blog/add.svg" /><p class="text-[1.3vw]">
+                Revenue Operations 101
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="w-full bg-cyan py-[2%] text-[1.6vw] font-bold text-white rounded-b-[30px] text-center">
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>
