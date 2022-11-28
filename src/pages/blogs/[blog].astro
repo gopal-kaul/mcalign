@@ -8,12 +8,12 @@ const { blog } = Astro.params;
 
 <Layout title={blog}>
   <main class="px-[10%] pt-[5%]">
-    <h1 class="font-gt-america text-[2.5vw] text-darkblue">
+    <h1 class="font-gt-america text-[5vw] md:text-[2.5vw] text-darkblue">
       Revenue Operations 101: The Definitive Guide to Revenue Operations
       (RevOps) . How to Grow Your Company&apos;s Revenue with a Strong Revenue
       Operations Team
     </h1>
-    <div class="flex flex-row gap-10 pt-10">
+    <div class="flex flex-row gap-5 md:gap-10 pt-10">
       <button
         class="px-12 py-0.5 text-white bg-gradient-to-r from-purple to-cyan rounded-lg text-[4vw] md:text-[1.5vw]"
         >Blog</button
@@ -23,24 +23,24 @@ const { blog } = Astro.params;
         >Tech</button
       >
     </div>
-    <div class="flex flex-row justify-end items-end gap-4">
+    <div class="flex flex-row justify-end items-end py-5 md:py-0 gap-4">
       <a href="#"><img src="/socials/facebook.svg" class="h-[35px]" /></a>
       <a href="#"><img src="/socials/linkedin.svg" class="h-[35px]" /></a>
       <a href="#"><img src="/socials/twitter.svg" class="h-[35px]" /></a>
     </div>
-    <p class="text-[1.7vw]">
+    <p class="text-[3.8vw] md:text-[1.7vw]">
       <span class="font-bold font-gt-america text-darkblue">Posted on:</span>
       Sep 5, 2022
     </p>
     <div class="">
       <img src="/blog/blogimg.png" class="object-contain" />
     </div>
-    <div class="flex flex-row gap-12">
+    <div class="flex flex-col md:flex-row gap-12 pb-10">
       <div>
-        <h2 class="font-gt-america text-darkblue text-[2vw] pb-10">
+        <h2 class="font-gt-america text-darkblue text-[4.3vw] md:text-[2vw] pb-10">
           What is Revenue Operations (RevOps)?
         </h2>
-        <p class="text-[1.5vw] text-black/50">
+        <p class="text-[3vw] md:text-[1.5vw] text-black/50">
           Revenue Operations is a term that describes the full spectrum of
           activities in a company that drive revenue, from customer acquisition
           and retention to digital marketing to sales. Rev Ops allows companies
@@ -77,31 +77,31 @@ const { blog } = Astro.params;
       </div>
       <div class="w-full border border-black/20 h-fit rounded-[50px]">
         <div class="px-[10%] pt-[15%] pb-5">
-          <h2 class="text-darkblue font-bold text-[1.8vw]">Related Articles</h2>
+          <h2 class="text-darkblue font-bold text-[4.5vw] md:text-[1.8vw]">Related Articles</h2>
           <ul class="pt-[3%] flex flex-col gap-4">
             <li class="flex flex-row items-center gap-4">
-              <img src="/blog/add.svg" /><p class="text-[1.3vw]">
+              <img src="/blog/add.svg" /><p class="text-[3vw] md:text-[1.3vw]">
                 Revenue Operations 101
               </p>
             </li>
             <li class="flex flex-row items-center gap-4">
-              <img src="/blog/add.svg" /><p class="text-[1.3vw]">
+              <img src="/blog/add.svg" /><p class="text-[3vw] md:text-[1.3vw]">
                 10 rules to increase the Effectiveness...
               </p>
             </li>
             <li class="flex flex-row items-center gap-4">
-              <img src="/blog/add.svg" /><p class="text-[1.3vw]">
+              <img src="/blog/add.svg" /><p class="text-[3vw] md:text-[1.3vw]">
                 Tired of managing your sales team?
               </p>
             </li>
             <li class="flex flex-row items-center gap-4">
-              <img src="/blog/add.svg" /><p class="text-[1.3vw]">
+              <img src="/blog/add.svg" /><p class="text-[3vw] md:text-[1.3vw]">
                 Revenue Operations 101
               </p>
             </li>
           </ul>
         </div>
-        <div class="w-full bg-cyan py-[2%] text-[1.6vw] font-bold text-white rounded-b-[30px] text-center">
+        <div class="w-full bg-cyan py-[5%] text-[3.5vw] md:text-[1.6vw] font-bold text-white rounded-b-[50px] text-center">
           <a href="#">Learn More</a>
         </div>
       </div>
