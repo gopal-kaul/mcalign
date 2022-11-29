@@ -1,13 +1,21 @@
 ---
+export interface Props {
+  theme: string;
+}
+const { theme } = Astro.props;
 const path = new URL(Astro.request.url).pathname;
 ---
 
 <nav
-  class="flex flex-row justify-between pl-[10%] pt-[5%] gap-4 items-center lg:items-stretch"
+  class={`flex flex-row justify-between pl-[10%] pt-[5%] gap-4 items-center lg:items-stretch ${
+    theme === "dark" ? "bg-black text-white/40" : "bg-white text-black/40"
+  }`}
 >
   <img src="/logo.svg" alt="Logo" class="max-w-[60vw] md:w-auto" />
   <div
-    class="w-full flex justify-end lg:border-b-2 md:border-black/10 pr-[10%]"
+    class={`w-full flex justify-end lg:border-b-2 md:${
+      theme === "dark" ? "border-white/10" : "border-black/10"
+    } pr-[10%]`}
   >
     <svg
       viewBox="0 0 100 80"
@@ -21,10 +29,16 @@ const path = new URL(Astro.request.url).pathname;
       <rect y="60" width="100" class="h-3"></rect>
     </svg>
     <ul
-      class="uppercase lg:gap-4 xl:gap-12 font-black hidden lg:flex flex-row text-black/40 tracking-widest shrink-0"
+      class="uppercase lg:gap-4 xl:gap-12 font-black hidden lg:flex flex-row tracking-widest shrink-0"
     >
       <li>
         <a href="/" class={`${path === "/" ? "text-green" : ""}`}>Home</a>
+      </li>
+      <li>
+        <a
+          href="/solutions"
+          class={`${path === "/solutions" ? "text-green" : ""}`}>Solutions</a
+        >
       </li>
       <li>Our Thinking</li>
       <li>Services</li>
@@ -39,13 +53,19 @@ const path = new URL(Astro.request.url).pathname;
 </nav>
 <ul
   id="mobilenav"
-  class="hidden uppercase gap-y-4 font-black flex-col text-black/40 tracking-widest items-end pr-[10%]"
+  class="hidden uppercase gap-y-4 font-black flex-col tracking-widest items-end pr-[10%]"
 >
   <li><a href="/" class={`${path === "/" ? "text-green" : ""}`}>Home</a></li>
+  <li>
+    <a href="/solutions" class={`${path === "/" ? "text-green" : ""}`}
+      >Solutions</a
+    >
+  </li>
   <li>Our Thinking</li>
   <li>Services</li>
   <li>
-    <a href="/blogs" class={`${path === "/blogs/" ? "text-green" : ""}`}>Blogs</a
+    <a href="/blogs" class={`${path === "/blogs/" ? "text-green" : ""}`}
+      >Blogs</a
     >
   </li>
   <li>Contact Us</li>
