@@ -6,13 +6,13 @@ import Layout from "../layouts/Layout.astro";
   <main class="px-[10%] py-[5%] bg-black">
     <h1
       style="color: transparent;"
-      class="bg-clip-text bg-gradient-to-r font-black from-purple to-cyan text-[5vw]"
+      class="bg-clip-text bg-gradient-to-r font-black from-purple to-cyan text-[7vw] md:text-[5vw]"
     >
       Automate your sales planning to improve your bottom line and gain a
       competitive edge.
     </h1>
     <div class="flex flex-row-reverse gap-4 md:gap-8 pt-10">
-      <p class="text-white/50 text-[1.8vw] leading-[1.8]">
+      <p class="text-white/50 text-[4vw] md:text-[1.8vw] leading-[1.8]">
         Sales planning can be time consuming, tedious and difficult to measure.
         Many companies spend an average of 40%-60% of their time on sales
         planning activities that could be automated with a little bit of effort.
@@ -29,7 +29,7 @@ import Layout from "../layouts/Layout.astro";
     >
       Align your sales team for success
     </h2>
-    <p class="text-[1.8vw] leading-relaxed pt-10">
+    <p class="text-[3vw] md:text-[1.8vw] leading-relaxed pt-10">
       Sales planning is a critical component of any business, but it’s often
       overlooked. It’s easy to see why: sales planning can be time consuming,
       tedious and difficult to measure. But if you want to increase your
@@ -43,17 +43,17 @@ import Layout from "../layouts/Layout.astro";
         <div class="grid place-items-center">
           <img src="/solutions/sales.svg" />
         </div>
-        <h4 class="text-darkblue font-bold uppercase text-[1.3vw] my-[5%]">
+        <h4 class="text-darkblue font-bold uppercase text-[3vw] md:text-[1.3vw] my-[5%]">
           Sales Objectives
         </h4>
-        <p class="text-black/40 text-[0.95vw] font-medium mb-[20%]">
+        <p class="text-black/40 text-[2vw] md:text-[0.95vw] font-medium mb-[2%] md:mb-[20%]">
           Aligning your sales team with your company&apos;s goals is crucial to
           achieving results. It&apos;s not just about setting up Sales
           Objectives and setting targets, it's about ensuring that those targets
           are SMART
         </p>
         <button
-          class="bg-gradient-to-r from-purple to-cyan text-white px-12 py-4"
+          class="bg-gradient-to-r from-purple to-cyan text-white px-5 md:px-12 py-1 md:py-4 text-xs md:text-base"
           >Learn More</button
         >
       </div>
@@ -61,17 +61,17 @@ import Layout from "../layouts/Layout.astro";
         <div class="grid place-items-center">
           <img src="/solutions/territory.svg" />
         </div>
-        <h4 class="text-darkblue font-bold uppercase text-[1.3vw] my-[5%]">
+        <h4 class="text-darkblue font-bold uppercase text-[3vw] md:text-[1.3vw] my-[5%]">
           Territory Planning
         </h4>
-        <p class="text-black/40 text-[0.95vw] font-medium mb-[12%]">
+        <p class="text-black/40 text-[2vw] md:text-[0.95vw] font-medium mb-[2%] md:mb-[12%]">
           Aligning territories, you will be able to see where there are gaps in
           coverage and take steps to fill those gaps. It also helps identify
           opportunities for growth in areas where demand is high but there are
           not enough resources to cover it
         </p>
         <button
-          class="bg-gradient-to-r from-purple to-cyan text-white px-12 py-4"
+          class="bg-gradient-to-r from-purple to-cyan text-white px-5 md:px-12 py-1 md:py-4 text-xs md:text-base"
           >Learn More</button
         >
       </div>
@@ -79,17 +79,17 @@ import Layout from "../layouts/Layout.astro";
         <div class="grid place-items-center">
           <img src="/solutions/quota.svg" />
         </div>
-        <h4 class="text-darkblue font-bold uppercase text-[1.3vw] my-[5%]">
+        <h4 class="text-darkblue font-bold uppercase text-[3vw] md:text-[1.3vw] my-[5%]">
           Quota Planning
         </h4>
-        <p class="text-black/40 text-[0.95vw] font-medium mb-[2%]">
+        <p class="text-black/40 text-[2vw] md:text-[0.95vw] font-me mb-[2%]dium mb-[2%]">
           Aligning your corporate targets across territories, products, business
           segments and sales roles, you'll be able to better understand the
           capacity of your organization and use that information to determine
           what will help you meet those goals and data-driven metrics
         </p>
         <button
-          class="bg-gradient-to-r from-purple to-cyan text-white px-12 py-4"
+          class="bg-gradient-to-r from-purple to-cyan text-white px-5 md:px-12 py-1 md:py-4 text-xs md:text-base"
           >Learn More</button
         >
       </div>
@@ -97,12 +97,12 @@ import Layout from "../layouts/Layout.astro";
   </div>
   <section class="w-full">
     <div
-      class="flex flex-row gap-24 justify-center border-b-2 border-black/20 shadow-black"
+      class="flex flex-row gap-4 md:gap-24 justify-center border-b-2 border-black/20 shadow-black"
     >
       <div class="py-[0.7%] relative">
         <button class="font-bold text-[2vw]">Sales Objective</button>
         <div
-          class="absolute bottom-0 min-h-[8px] min-w-full bg-gradient-to-r from-purple to-cyan"
+          class="absolute bottom-0 min-h-[2px] md:min-h-[4px] lg:min-h-[8px] min-w-full bg-gradient-to-r from-purple to-cyan"
         >
         </div>
       </div>
@@ -131,22 +131,24 @@ import Layout from "../layouts/Layout.astro";
         organization—and ensuring that salespeople focus on achieving these
         results rather than solely their own personal targets
       </p>
-      <div class="flex flex-row flex-wrap gap-12 items-center justify-center">
+      <div
+        class="flex flex-row flex-wrap gap-x-[10%] gap-y-5 md:gap-12 items-center justify-center"
+      >
         <div
-          class="w-[25%] border-black/20 border rounded-[50px] px-[3%] py-[2%]"
+          class="w-[45%] md:w-[25%] border-black/20 border rounded-[20px] md:rounded-[50px] px-[3%] py-[2%]"
         >
           <div class="flex justify-center">
-            <img src="/salesobjective/1.svg" class="object-contain" />
+            <img src="/salesobjective/1.svg" class="h-auto w-[50%] md:w-auto" />
           </div>
           <p class="text-[1.1vw] px-[2%] pt-[10%] text-darkblue text-center">
             Create a plan for achieving sales revenue and profit goals.
           </p>
         </div>
         <div
-          class="w-[25%] border-black/20 border rounded-[50px] px-[3%] py-[2%]"
+          class="w-[45%] md:w-[25%] border-black/20 border rounded-[20px] md:rounded-[50px] px-[3%] py-[2%]"
         >
           <div class="flex justify-center">
-            <img src="/salesobjective/2.svg" class="object-contain" />
+            <img src="/salesobjective/2.svg" class="h-auto w-[50%] md:w-auto" />
           </div>
           <p class="text-[1.1vw] pt-[10%] text-darkblue text-center">
             Define the amount of anticipated sales allocated by product,
@@ -154,10 +156,10 @@ import Layout from "../layouts/Layout.astro";
           </p>
         </div>
         <div
-          class="w-[25%] border-black/20 border rounded-[50px] px-[3%] py-[2%]"
+          class="w-[45%] md:w-[25%] border-black/20 border rounded-[20px] md:rounded-[50px] px-[3%] py-[2%]"
         >
           <div class="flex justify-center">
-            <img src="/salesobjective/3.svg" class="object-contain" />
+            <img src="/salesobjective/3.svg" class="h-auto w-[50%] md:w-auto" />
           </div>
           <p class="text-[1.1vw] pt-[10%] text-darkblue text-center">
             Define Channel Mix, Target Offering(s), Capability and Engagement
@@ -165,20 +167,20 @@ import Layout from "../layouts/Layout.astro";
           </p>
         </div>
         <div
-          class="w-[25%] border-black/20 border rounded-[50px] px-[3%] py-[2%]"
+          class="w-[45%] md:w-[25%] border-black/20 border rounded-[20px] md:rounded-[50px] px-[3%] py-[2%]"
         >
           <div class="flex justify-center">
-            <img src="/salesobjective/4.svg" class="object-contain" />
+            <img src="/salesobjective/4.svg" class="h-auto w-[50%] md:w-auto" />
           </div>
           <p class="text-[1.1vw] pt-[10%] text-darkblue text-center">
             Manage how sales are executed against the existing sales budget
           </p>
         </div>
         <div
-          class="w-[25%] border-black/20 border rounded-[50px] px-[2%] py-[2%]"
+          class="w-[45%] md:w-[25%] border-black/20 border rounded-[20px] md:rounded-[50px] px-[2%] py-[2%]"
         >
           <div class="flex justify-center">
-            <img src="/salesobjective/5.svg" class="object-contain" />
+            <img src="/salesobjective/5.svg" class="h-auto w-[50%] md:w-auto" />
           </div>
           <p class="text-[1.1vw] pt-[10%] text-darkblue text-center">
             What actions can you take to make sure you hit your target sales
@@ -206,10 +208,10 @@ import Layout from "../layouts/Layout.astro";
       enough resources to cover it
     </p>
     <div
-      class="flex flex-row flex-wrap gap-12 items-center justify-center pt-10"
+        class="flex flex-row flex-wrap gap-x-[10%] gap-y-5 md:gap-12 items-center justify-center"
     >
       <div
-        class="w-[25%] border-black/20 border rounded-[50px] px-[3%] py-[2%] bg-white"
+        class="w-[45%] md:w-[25%] border-black/20 border rounded-[20px] md:rounded-[50px] px-[3%] py-[2%] bg-white"
       >
         <div class="flex justify-center">
           <img src="/territory/1.svg" class="object-contain" />
@@ -220,30 +222,30 @@ import Layout from "../layouts/Layout.astro";
         </p>
       </div>
       <div
-        class="w-[25%] border-black/20 border rounded-[50px] px-[3%] py-[2%] bg-white"
+        class="w-[45%] md:w-[25%] border-black/20 border rounded-[20px] md:rounded-[50px] px-[3%] py-[2%] bg-white"
       >
         <div class="flex justify-center">
-          <img src="/territory/2.svg" class="object-contain" />
+          <img src="/territory/2.svg" class="h-auto w-[50%] md:w-auto" />
         </div>
         <p class="text-[1.1vw] pt-[10%] pb-[10%] text-darkblue text-center">
           Optimized use of resources through improved productivity
         </p>
       </div>
       <div
-        class="w-[25%] border-black/20 border rounded-[50px] px-[3%] py-[2%] bg-white"
+        class="w-[45%] md:w-[25%] border-black/20 border rounded-[20px] md:rounded-[50px] px-[3%] py-[2%] bg-white"
       >
         <div class="flex justify-center">
-          <img src="/territory/3.svg" class="object-contain" />
+          <img src="/territory/3.svg" class="h-auto w-[50%] md:w-auto" />
         </div>
         <p class="text-[1.1vw] pt-[10%] text-darkblue text-center">
           Improved customer satisfaction through better service levels
         </p>
       </div>
       <div
-        class="w-[25%] border-black/20 border rounded-[50px] px-[3%] py-[2%] bg-white"
+        class="w-[45%] md:w-[25%] border-black/20 border rounded-[20px] md:rounded-[50px] px-[3%] py-[2%] bg-white"
       >
         <div class="flex justify-center">
-          <img src="/territory/4.svg" class="object-contain" />
+          <img src="/territory/4.svg" class="h-auto w-[50%] md:w-auto" />
         </div>
         <p class="text-[1.1vw] pt-[10%] text-darkblue text-center">
           Increased flexibility and agility by having more options available
@@ -251,10 +253,10 @@ import Layout from "../layouts/Layout.astro";
         </p>
       </div>
       <div
-        class="w-[25%] border-black/20 border rounded-[50px] px-[2%] py-[2%] bg-white"
+        class="w-[45%] md:w-[25%] border-black/20 border rounded-[20px] md:rounded-[50px] px-[2%] py-[2%] bg-white"
       >
         <div class="flex justify-center">
-          <img src="/territory/5.svg" class="object-contain" />
+          <img src="/territory/5.svg" class="h-auto w-[50%] md:w-auto" />
         </div>
         <p class="text-[1.1vw] pt-[10%] text-darkblue text-center">
           Build target lists based on multiple criteria and assess their impact
@@ -282,23 +284,23 @@ import Layout from "../layouts/Layout.astro";
       across territories, products, business segments, and sales roles.
     </p>
     <div
-      class="flex flex-row flex-wrap gap-12 items-center justify-center pt-10"
+        class="flex flex-row flex-wrap gap-x-[10%] gap-y-5 md:gap-12 items-center justify-center"
     >
       <div
-        class="w-[25%] border-black/20 border rounded-[50px] px-[3%] py-[2%] bg-white"
+        class="w-[45%] md:w-[25%] border-black/20 border rounded-[20px] md:rounded-[50px] px-[3%] py-[2%] bg-white"
       >
         <div class="flex justify-center">
-          <img src="/territory/1.svg" class="object-contain" />
+          <img src="/territory/1.svg" class="h-auto w-[50%] md:w-auto" />
         </div>
         <p class="text-[1.1vw] px-[2%] pt-[10%] text-darkblue text-center">
           Align strategic corporate objectives and budgets throughout the year
         </p>
       </div>
       <div
-        class="w-[25%] border-black/20 border rounded-[50px] px-[3%] py-[2%] bg-white"
+        class="w-[45%] md:w-[25%] border-black/20 border rounded-[20px] md:rounded-[50px] px-[3%] py-[2%] bg-white"
       >
         <div class="flex justify-center">
-          <img src="/territory/2.svg" class="object-contain" />
+          <img src="/quota/2.svg" class="h-auto w-[50%] md:w-auto" />
         </div>
         <p class="text-[1.1vw] pt-[10%] text-darkblue text-center">
           Uncover true sales capacity by leveraging iterative planning and
@@ -306,10 +308,10 @@ import Layout from "../layouts/Layout.astro";
         </p>
       </div>
       <div
-        class="w-[25%] border-black/20 border rounded-[50px] px-[3%] py-[2%] bg-white"
+        class="w-[45%] md:w-[25%] border-black/20 border rounded-[20px] md:rounded-[50px] px-[3%] py-[2%] bg-white"
       >
         <div class="flex justify-center">
-          <img src="/territory/3.svg" class="object-contain" />
+          <img src="/quota/3.svg" class="h-auto w-[50%] md:w-auto" />
         </div>
         <p
           class="text-[1.1vw] pt-[10%] text-darkblue text-center pb-[20%] px-[5%]"
@@ -318,20 +320,20 @@ import Layout from "../layouts/Layout.astro";
         </p>
       </div>
       <div
-        class="w-[25%] border-black/20 border rounded-[50px] px-[3%] py-[2%] bg-white"
+        class="w-[45%] md:w-[25%] border-black/20 border rounded-[20px] md:rounded-[50px] px-[3%] py-[2%] bg-white"
       >
         <div class="flex justify-center">
-          <img src="/territory/4.svg" class="object-contain" />
+          <img src="/quota/4.svg" class="h-auto w-[50%] md:w-auto" />
         </div>
         <p class="text-[1.1vw] pt-[10%] text-darkblue text-center pb-[20%]">
           Develop comprehensive target for maximum impact
         </p>
       </div>
       <div
-        class="w-[25%] border-black/20 border rounded-[50px] px-[2%] py-[2%] bg-white"
+        class="w-[45%] md:w-[25%] border-black/20 border rounded-[20px] md:rounded-[50px] px-[2%] py-[2%] bg-white"
       >
         <div class="flex justify-center">
-          <img src="/territory/5.svg" class="object-contain" />
+          <img src="/quota/5.svg" class="h-auto w-[50%] md:w-auto" />
         </div>
         <p class="text-[1.1vw] pt-[10%] text-darkblue text-center">
           Build target lists based on multiple criteria and assess their impact
