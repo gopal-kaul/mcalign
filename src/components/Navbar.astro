@@ -41,7 +41,7 @@ const path = new URL(Astro.request.url).pathname;
       <li>
         <a
           href="/solutions"
-          class={`${path === "/solutions" ? "text-green" : ""}`}>Solutions</a
+          class={`${path === "/solutions/" ? "text-green" : ""}`}>Solutions</a
         >
       </li>
       <li>Our Thinking</li>
@@ -61,7 +61,7 @@ const path = new URL(Astro.request.url).pathname;
 >
   <li><a href="/" class={`${path === "/" ? "text-green" : ""}`}>Home</a></li>
   <li>
-    <a href="/solutions" class={`${path === "/" ? "text-green" : ""}`}
+    <a href="/solutions" class={`${path === "/solutions/" ? "text-green" : ""}`}
       >Solutions</a
     >
   </li>
