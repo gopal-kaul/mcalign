@@ -28,9 +28,9 @@ const path = new URL(Astro.request.url).pathname;
       id="hamburger"
       class="lg:hidden"
     >
-      <rect width="100" class="h-3"></rect>
-      <rect y="30" width="100" class="h-3"></rect>
-      <rect y="60" width="100" class="h-3"></rect>
+      <rect width="100" class={`h-3 ${theme==='dark'?'fill-white' : ""}`}></rect>
+      <rect y="30" width="100" class={`h-3 ${theme==='dark'?'fill-white' : ""}`}></rect>
+      <rect y="60" width="100" class={`h-3 ${theme==='dark'?'fill-white' : ""}`}></rect>
     </svg>
     <ul
       class="uppercase lg:gap-4 xl:gap-12 font-black hidden lg:flex flex-row tracking-widest shrink-0"
@@ -57,7 +57,7 @@ const path = new URL(Astro.request.url).pathname;
 </nav>
 <ul
   id="mobilenav"
-  class="hidden uppercase gap-y-4 font-black flex-col tracking-widest items-end pr-[10%]"
+  class={`hidden uppercase gap-y-4 font-black flex-col tracking-widest items-end pr-[10%] ${theme==='dark' ? 'bg-black text-white' : ""}`}
 >
   <li><a href="/" class={`${path === "/" ? "text-green" : ""}`}>Home</a></li>
   <li>
