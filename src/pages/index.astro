@@ -3,6 +3,12 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="McAlign">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+  </head>
   <main class="pt-20 md:pt-0 pl-[10%]">
     <div class="flex flex-col-reverse md:flex-row-reverse overflow-clip">
       <div>
@@ -256,17 +262,60 @@ import Layout from "../layouts/Layout.astro";
       Our innovative solution has helped some of the world&apos;s most
       successful brands achieve greater growth. Our customers include some of
       the world&apos;s leading brands, including :
-    </p>
-    <div class="flex flex-row overflow-x-scroll gap-x-[10%] py-20">
-      <img src="/clientlogos/bg.svg" />
-      <img src="/clientlogos/commscope.svg" />
-      <img src="/clientlogos/cyient.svg" />
-      <img src="/clientlogos/zoominfo.svg" />
-      <img src="/clientlogos/bg.svg" />
-      <img src="/clientlogos/commscope.svg" />
-      <img src="/clientlogos/cyient.svg" />
-      <img src="/clientlogos/zoominfo.svg" />
+    </p><div
+      class="swiper mySwiper"
+      style="--swiper-pagination-bullet-inactive-color: #ffffff; --swiper-pagination-bullet-inactive-opacity: 0.5;"
+    >
+      <div class="swiper-wrapper py-[15%] md:py-[5%]">
+        <div class="swiper-slide">
+          <img src="/clientlogos/1.png" class="object-cover" />
+        </div>
+        <div class="swiper-slide">
+          <img src="/clientlogos/2.png" class="object-cover" />
+        </div>
+        <div class="swiper-slide">
+          <img src="/clientlogos/3.png" class="object-cover" />
+        </div>
+        <div class="swiper-slide">
+          <img src="/clientlogos/4.png" class="object-cover" />
+        </div>
+        <div class="swiper-slide">
+          <img src="/clientlogos/5.png" class="object-cover" />
+        </div>
+        <div class="swiper-slide">
+          <img src="/clientlogos/6.png" class="object-cover" />
+        </div>
+        <div class="swiper-slide">
+          <img src="/clientlogos/7.png" class="object-cover" />
+        </div>
+        <div class="swiper-slide">
+          <img src="/clientlogos/8.png" class="object-cover" />
+        </div>
+        <div class="swiper-slide">
+          <img src="/clientlogos/9.png" class="object-cover" />
+        </div>
+        <div class="swiper-slide">
+          <img src="/clientlogos/10.png" class="object-cover" />
+        </div>
+        <div class="swiper-slide">
+          <img src="/clientlogos/11.png" class="object-cover" />
+        </div>
+        <div class="swiper-slide">
+          <img src="/clientlogos/12.png" class="object-cover" />
+        </div>
+        <div class="swiper-slide">
+          <img src="/clientlogos/13.png" class="object-cover" />
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
     </div>
+    <!-- <div class="swiper myswiper w-full h-full">
+      <div class="swiper-wrapper">
+        <img src="/clientlogos/cyient.svg" />
+        <img src="/clientlogos/zoominfo.svg" />
+      </div>
+      <div class="pagination"></div>
+    </div> -->
   </section>
   <section class="relative w-full px-[10%] py-[8%] overflow-clip">
     <img src="/circle.svg" class="absolute -top-[35%] -right-[20%] -z-10" />
@@ -312,4 +361,15 @@ import Layout from "../layouts/Layout.astro";
       >
     </center>
   </section>
+  <script type="module">
+    import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js";
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: "auto",
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
 </Layout>
